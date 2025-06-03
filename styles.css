@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #1f1c2c, #928dab);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 220px;
+  background: #2c2f33;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.sidebar h3 {
+  color: #ff3e6c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.sidebar button {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.sidebar button:hover {
+  background-color: #555;
+}
+.user-list {
+  background: #1e1e1e;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #ddd;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+}
+.hidden {
+  display: none;
+}
+.main {
+  flex-grow: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+button {
+  background-color: #ff3e6c;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e1325c;
+}
+.auth-screen, .game-screen {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wallet, .result, .history, .leaderboard {
+  margin-top: 20px;
+  text-align: left;
+}
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+body.dark-mode {
+  background: #111;
+  color: #eee;
+}
